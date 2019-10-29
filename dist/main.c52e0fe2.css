@@ -1,33 +1,121 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap");
+
+/* -------------------- DEBUG -------------------- */
+
+[debug],
+[debug] * {
+  outline: solid 1px #9400ff;
+  box-shadow: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
+/* -------------------- GLOBAL RULE -------------------- */
+
+:root {
+  --black: #1e1e1e;
+  --grey: #faf9f5;
+  --white: #ffffff;
+  --blue: #1c648c;
+  --yellow: #ffcc33;
+  --orange: #f87624;
+  --cement: #7f6e5b;
+  --StormDust: #666768;
+  --tulipTree: #e8b33c;
+}
+
+body {
+  font-family: "Staatliches", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif;
+  font-size: 24px;
+  line-height: 1, 5;
+  color: #1e1e1e;
+  color: var(--black);
+}
+
+a {
+  color: #666768;
+  color: var(--StormDust);
+  font-family: "staatliches";
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ---------------------- NAV ------------------------ */
 header {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  font-family: "Space Mono", monospace;
+  background-color: #faf9f5;
+  background-color: var(--grey);
 }
 
-header h1 {
-  margin: 0;
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: black;
+  font-family: "Black Ops One";
+  opacity: 0.8;
 }
 
-header ul {
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
   display: flex;
 }
 
-header li {
-  list-style-type: none;
-  margin: 0 10px;
+.menu-items {
+  margin-right: 50px;
 }
 
-.header-title {
+.cart-item {
+  position: relative;
+  display: flex;
+}
+
+.count {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #ffcc33;
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+/* -------------------- HERO -------------------- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
   background-image: url("/nug80mjl.a1aa31ba.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 400px;
   background-size: cover;
-  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-title {
+  color: #e8b33c;
+  color: var(--tulipTree);
+  font-size: 3vw;
+  font-weight: bold;
+  font-family: "Staatliches";
+  opacity: 0.6;
 }
 
 
