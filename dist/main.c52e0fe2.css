@@ -111,7 +111,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 90vh;
   background-image: url("/nug80mjl.a1aa31ba.jpg");
   background-size: cover;
   background-position: center;
@@ -195,7 +195,7 @@ nav {
 
 .collection-item img {
   max-width: 100%;
-  width: 500px;
+  width: 300px;
   height: auto;
 }
 
@@ -205,14 +205,14 @@ nav {
 
 .collection-info h3 {
   margin-top: 1.25rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: capitalize;
 }
 
 .collection-info a {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border-bottom: 3px solid #bd9968;
   border-bottom: 3px solid var(--teak);
 }
@@ -223,23 +223,10 @@ nav {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 3.5rem;
+  padding-top: 2.5rem;
   background-image: url(/photo-1525468568166-6f2cd17c7ec9.2d821f8d.jpeg);
-  padding-left: 3.5rem;
-}
-
-.object {
-  display: flex;
-  padding: 2rem;
-  max-width: 100%;
-  width: 500px;
-  height: 500px;
-  flex-direction: column;
-}
-
-.object img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding-left: 5.5rem;
+  padding-bottom: 10rem;
 }
 
 .article h3 {
@@ -252,42 +239,89 @@ nav {
   background-color: var(--teak);
   font-size: 1.5rem;
   transform: rotate(-2deg);
-}
-
-.article > div {
-  display: flex;
-  flex-wrap: wrap;
+  opacity: 0.8;
 }
 
 .circle {
   position: absolute;
   right: 10px;
-
-  top: -80px;
+  top: -50px;
   background-color: #bd9968;
   background-color: var(--teak);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10rem;
-  height: 10rem;
-  font-size: 25px;
+  width: 6rem;
+  height: 6rem;
+  font-size: 15px;
   color: #666768;
   color: var(--StormDust);
   border-radius: 50%;
+  opacity: 0.9;
+}
+
+.article-selection {
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.article-item {
+  position: relative;
+  margin-bottom: 50px;
+  flex: 1 1 10em;
+  /* border-style: solid;
+  border-width: 4px; */
+}
+
+.image-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bd9968;
+  border-color: var(--teak);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .bar-in-object {
-  display: flex;
-  justify-content: space-between;
-  background-color: #666768;
-  background-color: var(--StormDust);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #bd9968;
+  opacity: 0.8;
 }
 
-.add-to-card {
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 10%;
+.bar-in-object ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-in-object li span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #7f6e5b;
+  background-color: var(--cement);
+  border-radius: 50%;
+}
+
+.bar-in-object li {
+  display: flex;
+  font-size: 1.2rem;
+  color: #666768;
+  color: var(--StormDust);
+  margin: 3px;
 }
 
 
