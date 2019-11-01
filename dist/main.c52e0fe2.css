@@ -47,11 +47,17 @@ a {
 header {
   display: flex;
   align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
   justify-content: space-between;
   padding: 1rem 3rem;
   font-family: "Space Mono", monospace;
   background-color: #faf9f5;
   background-color: var(--grey);
+}
+
+.header500 {
+  display: none;
 }
 
 .logo {
@@ -77,6 +83,7 @@ nav {
 }
 
 .menu-items {
+  display: flex;
   margin-right: 80px;
 }
 
@@ -142,7 +149,7 @@ nav {
   background-color: #bd9968;
   background-color: var(--teak);
   font-family: "Staatliches";
-  font-size: 1rem;
+  font-size: 2vw;
 }
 
 .shipping-bar p {
@@ -377,7 +384,6 @@ nav {
 
 .box h3 {
   margin-bottom: 1.875rem;
-
   font-size: 3rem;
   font-weight: 700;
   font-family: "staatliches";
@@ -400,6 +406,47 @@ nav {
   font-family: "staatliches";
   color: #bd9968;
   color: var(--teak);
+}
+/* reponsive ---------------------------- */
+
+@media (max-width: 500px) {
+  .header500 {
+    display: block;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .cart-item {
+    display: none;
+  }
+
+  .main-title {
+    color: #bd9968;
+    color: var(--teak);
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: "Staatliches";
+    opacity: 0.8;
+  }
+  .shipping-bar {
+    display: flex;
+    align-items: center;
+    background-color: #bd9968;
+    background-color: var(--teak);
+    font-family: "Staatliches";
+    font-size: 4vw;
+  }
+}
+@media (max-width: 740px) {
+  header {
+    flex-direction: column;
+  }
 }
 
 
