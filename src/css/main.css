@@ -377,6 +377,64 @@ nav {
   font-family: "staatliches";
   color: var(--teak);
 }
+
+/* -------------------- NEWSLETTER -------------------- */
+
+.newsletter {
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--white);
+  font-family: "Staatliches";
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+input,
+button {
+  height: 5rem;
+  padding: 1.25rem 3rem;
+  border: 2px solid var(--black);
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 0;
+}
+
+input::placeholder {
+  font-size: 1.125rem;
+  color: var(--black);
+  opacity: 1;
+}
+
+button {
+  margin-left: -2px;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+  height: 8rem;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--StormDust);
+  color: var(--teak);
+}
+
+footer > p {
+  font-family: "Staatliches";
+  color: var(--teak);
+  font-size: 16px;
+}
+
 /* reponsive ---------------------------- */
 
 @media (max-width: 500px) {
