@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../nug80mjl.jpg":[["nug80mjl.a1aa31ba.jpg","../nug80mjl.jpg"],"../nug80mjl.jpg"],"./../../photo-1525468568166-6f2cd17c7ec9.jpeg":[["photo-1525468568166-6f2cd17c7ec9.2d821f8d.jpeg","../photo-1525468568166-6f2cd17c7ec9.jpeg"],"../photo-1525468568166-6f2cd17c7ec9.jpeg"],"./../../priscilla-du-preez-iS7qYzIhrmU-unsplash.jpg":[["priscilla-du-preez-iS7qYzIhrmU-unsplash.2b94c929.jpg","../priscilla-du-preez-iS7qYzIhrmU-unsplash.jpg"],"../priscilla-du-preez-iS7qYzIhrmU-unsplash.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../Img/first.jpg":[["first.1fadfe39.jpg","Img/first.jpg"],"Img/first.jpg"],"./../Img/fond-beton.jpeg":[["fond-beton.ed415cd9.jpeg","Img/fond-beton.jpeg"],"Img/fond-beton.jpeg"],"./../Img/philos.jpg":[["philos.6dd36093.jpg","Img/philos.jpg"],"Img/philos.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50189" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57092" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
