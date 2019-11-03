@@ -284,6 +284,11 @@ nav {
   object-fit: cover;
 }
 
+.image-container :hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
 .bar-in-object {
   position: absolute;
   top: 0;
