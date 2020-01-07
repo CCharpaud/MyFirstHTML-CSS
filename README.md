@@ -10,3 +10,6 @@
 
 1. Run `npm run prod` to bundle your code
 2. Deploy the `dist` folder
+
+
+Site : https://wizardly-sammet-8e4041.netlify.com/
